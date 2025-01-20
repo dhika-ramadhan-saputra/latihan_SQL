@@ -48,4 +48,7 @@ and project_tool in ('tableau', 'python');
 
 
 select * from job_posting_fact
-where nerd_role like '%Analyst%'
+where nerd_role like '%Analyst%';
+
+select * from job_posting_fact
+where project_company like '%JEK';
