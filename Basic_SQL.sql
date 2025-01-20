@@ -36,4 +36,16 @@ select nerd_role, project_tool
 from job_posting_fact
 where project_tool in ('sql', 'tableau')
 group by nerd_role;
-group by ner
+
+/* 
+Practice 1 (select role that contains data analyst or data scientist. for data analyst it must less than 300, and grater than or equal 700 for scientist.
+and the project tool is only tableau and py
+*/
+select nerd_role, hours_spent, project_tool
+from job_posting_fact
+where ((nerd_role = 'Data Analyst' and hours_spent < 300) or (nerd_role = 'Data Scientist' and hours_spent >= 700))
+and project_tool in ('tableau', 'python');
+
+
+select * from job_posting_fact
+where nerd_role like '%Analyst%'
