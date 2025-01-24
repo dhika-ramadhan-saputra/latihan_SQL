@@ -3,6 +3,7 @@ select * from job_facts;
 select * from company_dim;
 select * from skills_dim;
 select * from skill_job_dim;
+select * from job_posting_fact;
 
 /*
 select 
@@ -46,5 +47,19 @@ inner join skill_job_dim as sj
 	on j.job_id = sj.job_id
 inner join skills_dim as s
 	on sj.skill_id = s.skill_id;
-    
+
+
+-- practice problem
+select
+	s.skills,
+    count(sj.job_id) as number_of_posting,
+    avg(j.salary_year_avg) as average_salary
+from skills_dim as s
+left join skill_job_dim as sj
+	on s.skill_id = sj.skill_id
+left join job_facts as j
+	on sj.job_id = j.job_id
+group by s.skills
+order by average_salary desc
+;
 	 
