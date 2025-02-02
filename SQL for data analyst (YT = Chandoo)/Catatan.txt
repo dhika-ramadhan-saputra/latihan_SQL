@@ -1,0 +1,4 @@
+Hal-hal yang dipelajari :
+1. inspeksi semua table di database
+2. inspeksi masing-masing table
+3. basic select
