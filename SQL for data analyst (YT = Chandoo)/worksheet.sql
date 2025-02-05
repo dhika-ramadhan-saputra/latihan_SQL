@@ -25,3 +25,22 @@ where Boxes between 0 and 50;
 
 select SaleDate, Amount, Boxes, weekday(SaleDate) as day_of_week from sales
 where weekday(SaleDate) = 4;
+
+-- in clause
+select * from people
+where Team in ('Yummies', 'Delish');
+
+-- like clause
+select * from people
+where Salesperson like 'B%';
+
+-- Case
+select
+	SaleDate,
+    Amount,
+    case
+		when Amount < 5000 then 'Under 5K'
+        when Amount > 5000 then 'Beetwen 5000 and 10000'
+        when Amount > 10000 then 'More than 10K'
+	end as Kategori
+from sales;

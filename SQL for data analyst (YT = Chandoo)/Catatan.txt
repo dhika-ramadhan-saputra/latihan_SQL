@@ -1,4 +1,10 @@
+link tutorial : https://www.youtube.com/watch?v=l8DCPaHc5TQ&list=WL&index=2
+
 Hal-hal yang dipelajari :
 1. inspeksi semua table di database
 2. inspeksi masing-masing table
 3. basic select and where clause
+4. in clause (untuk mengambil data di multi kondisi (sifatnya sama seperti 'or'))
+5. like clause (untuk memfilter values yang memiliki kesamaan dengan nilai yg kita setting)
+6. Case (untuk mengkategorikan setiap values)
+7. 
