@@ -7,4 +7,7 @@ Hal-hal yang dipelajari :
 4. in clause (untuk mengambil data di multi kondisi (sifatnya sama seperti 'or'))
 5. like clause (untuk memfilter values yang memiliki kesamaan dengan nilai yg kita setting)
 6. Case (untuk mengkategorikan setiap values)
-7. 
+7. Joins (inner, left, right) - (buat make lebih dari 1 table dengan salah satu kolom yang punya data yang sama)
+8. Multiple joins (sama kaya join bedanya loncat loncat tabelnya biar bisa nyambung)
+9. multiple joins dengan conditions (sama aja kaya multiple join, cuma ada where clause nya buat kondisi tertentu)
+10. 
