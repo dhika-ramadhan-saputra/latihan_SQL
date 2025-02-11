@@ -10,4 +10,5 @@ Hal-hal yang dipelajari :
 7. Joins (inner, left, right) - (buat make lebih dari 1 table dengan salah satu kolom yang punya data yang sama)
 8. Multiple joins (sama kaya join bedanya loncat loncat tabelnya biar bisa nyambung)
 9. multiple joins dengan conditions (sama aja kaya multiple join, cuma ada where clause nya buat kondisi tertentu)
-10. 
+10.group by (untuk mengelompokan data berdasarkan kriteria tertentu)
+11. limit (untuk membatasi jumlah output)
